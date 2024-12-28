@@ -22,9 +22,9 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[50], // Light green background
+      backgroundColor: Colors.green[50],
       appBar: AppBar(
-        backgroundColor: Colors.green[50], // Same background as body
+        backgroundColor: Colors.green[50],
         elevation: 0,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.black),
@@ -230,39 +230,28 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
       ),
       bottomNavigationBar: itemCount > 0
           ? Padding(
-        padding: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-        child: BottomAppBar(
-          child: Padding(
-            padding: const EdgeInsets.all(6.0),
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-                padding: EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                ),
-              ),
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
-                    child: Text(
-                      "$itemCount element${itemCount > 1 ? 's' : ''}",
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 8.0),
-                    child: Text(
-                      "UZS $totalPrice",
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                  ),
-                ],
-              ),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.green,
+            padding: EdgeInsets.symmetric(vertical: 16),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
             ),
+          ),
+          onPressed: () {},
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "$itemCount элемент${itemCount > 1 ? 'ов' : ''}",
+                style: TextStyle(fontSize: 16, color: Colors.white),
+              ),
+              Text(
+                "UZS $totalPrice",
+                style: TextStyle(fontSize: 16, color: Colors.white),
+              ),
+            ],
           ),
         ),
       )
@@ -273,11 +262,11 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
   Widget _buildOverviewItem(IconData icon, String text) {
     return Column(
       children: [
-        Icon(icon, size: 24, color: Colors.green),
+        Icon(icon, size: 18, color: Colors.green),
         SizedBox(height: 8),
         Text(
           text,
-          style: TextStyle(fontSize: 14, color: Colors.black54),
+          style: TextStyle(fontSize: 8, color: Colors.black54),
         ),
       ],
     );

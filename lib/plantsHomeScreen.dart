@@ -18,7 +18,7 @@ class _ExclusiveOfferCarouselState extends State<ExclusiveOfferCarousel> {
     'assets/plant4.png',
   ];
   Timer? _timer;
-  int _currentCategory = 0; // 0: Indoor, 1: Garden, 2: Decorative
+  int _currentCategory = 0;
   final List<Map<String, dynamic>> _plants = [
     {
       'name': 'Monstera Adansonii',
@@ -86,7 +86,7 @@ class _ExclusiveOfferCarouselState extends State<ExclusiveOfferCarousel> {
     final categories = ['Indoor', 'Garden', 'Decorative'];
     return _plants
         .where((plant) => plant['category'] == categories[_currentCategory])
-        .take(2) // Ограничиваем количество элементов до 2
+        .take(2)
         .toList();
   }
 
@@ -304,7 +304,7 @@ class _ExclusiveOfferCarouselState extends State<ExclusiveOfferCarousel> {
                   final plant = _filteredPlants[index];
                   return GestureDetector(
                       onTap: () {
-                    // Переход на экран PlantDetailsScreen с передачей данных
+                    //
                     Navigator.push(
                       context,
                       MaterialPageRoute(
