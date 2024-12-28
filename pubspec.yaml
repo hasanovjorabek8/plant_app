@@ -49,14 +49,14 @@ dev_dependencies:
 flutter_launcher_icons:
     android: "launcher_icon"
     ios: true
-    image_path: "assets/app_icon.jpg"
+    image_path: "assets/img.png"
     min_sdk_android: 21 # android min sdk min:16, default 21
     web:
       generate: true
-      image_path: "assets/app_icon.jpg"
+      image_path: "assets/img.png"
     windows:
       generate: true
-      image_path: "assets/app_icon.jpg"
+      image_path: "assets/img.png"
       icon_size: 48 # min:48, max:256, default: 48
     macos:
       generate: true
@@ -73,4 +73,5 @@ flutter:
     - assets/plant4.png
     - assets/logo.png
     - assets/plant-detailed.png
-    - assets/plant.png
+    - assets/img.png
+    - assets/img_1.png

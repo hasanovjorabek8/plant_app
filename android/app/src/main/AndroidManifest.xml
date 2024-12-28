@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+        android:icon="@mipmap/launcher_icon"
         android:label="plant_widget"
-        android:name="${applicationName}"
-        android:icon="@mipmap/launcher_icon">
+        android:theme="@style/LaunchTheme">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -167,7 +167,7 @@ class _PlantDetailsScreenState extends State<PlantDetailsScreen> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Image.asset(
-                      'assets/plant1.png',
+                      'assets/img_1.png',
                       fit: BoxFit.cover,
                     ),
                   ),
