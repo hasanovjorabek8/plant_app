@@ -1,0 +1,76 @@
+name: plant_widget
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  carousel_slider: ^4.2.0
+  intl: ^0.19.0
+  video_player: ^2.9.1
+  smooth_page_indicator: ^1.2.0+3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
+  iconsax: ^0.0.8
+  flutter_staggered_grid_view: ^0.7.0
+  flutter_slidable: ^3.1.1
+  percent_indicator: ^4.2.3
+  http: ^1.2.2
+  stability_image_generation: ^0.0.4
+  syncfusion_flutter_charts: ^27.1.55
+  swipeable_button_view: ^0.0.2
+  provider: ^6.1.2
+  dotted_line: ^3.2.3
+  animate_do: ^3.3.4
+  flutter_svg: ^2.0.14
+  fl_chart: ^0.69.0
+  flutter_cached_pdfview: ^0.4.3
+  gap: ^3.0.1
+  file_picker: ^8.1.4
+  flutter_spinkit: ^5.2.1
+  dotted_border: ^2.1.0
+  card_swiper: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: "^0.14.2"
+
+flutter_launcher_icons:
+    android: "launcher_icon"
+    ios: true
+    image_path: "assets/app_icon.jpg"
+    min_sdk_android: 21 # android min sdk min:16, default 21
+    web:
+      generate: true
+      image_path: "assets/app_icon.jpg"
+    windows:
+      generate: true
+      image_path: "assets/app_icon.jpg"
+      icon_size: 48 # min:48, max:256, default: 48
+    macos:
+      generate: true
+      image_path: "assets/app_icon.jpg"
+
+flutter:
+  uses-material-design: true
+
+  # Указываем изображения для виджета
+  assets:
+    - assets/plant1.png
+    - assets/plant2.png
+    - assets/plant3.png
+    - assets/plant4.png
+    - assets/logo.png
+    - assets/plant-detailed.png
+    - assets/plant.png
